@@ -198,11 +198,11 @@ export default function StudioExperience({ onOpenBooking }) {
                   }}
                 />
 
-                {/* Red Laser Progress Tracer Trail */}
+                {/* Red Laser Progress Tracer Trail behind vehicle */}
                 <div
                   className="absolute top-0 inset-x-0 bg-gradient-to-b from-[#ff1a2b]/30 via-[#ff1a2b] to-[#ff4d5a] shadow-[0_0_12px_#ff1a2b] transition-all duration-75"
                   style={{
-                    height: `${carY + 30}px`,
+                    height: `${carY + 8}px`,
                   }}
                 />
               </div>
@@ -214,16 +214,16 @@ export default function StudioExperience({ onOpenBooking }) {
                   top: `${carY}px`,
                 }}
               >
-                {/* Headlight Glowing Light Beams */}
-                <div className="absolute top-[48px] left-1/2 -translate-x-1/2 w-14 sm:w-16 h-14 bg-gradient-to-b from-white/60 via-[#ff1a2b]/20 to-transparent -rotate-180 blur-[2px] pointer-events-none" />
+                {/* BMW M-Coupe Top-Down Silhouette Vector - Facing Forward Downwards */}
+                <div className="relative w-9 h-[54px] sm:w-11 sm:h-[62px] filter drop-shadow-[0_4px_14px_rgba(255,26,43,0.8)] rotate-180">
+                  {/* Headlight Glowing Light Beams (Projecting Forward onto Road Ahead) */}
+                  <div className="absolute top-[82%] left-1/2 -translate-x-1/2 w-16 sm:w-20 h-16 bg-gradient-to-b from-white/75 via-red-500/25 to-transparent blur-[3px] pointer-events-none" />
 
-                {/* BMW M-Coupe Top-Down Silhouette Vector */}
-                <div className="relative w-9 h-[54px] sm:w-11 sm:h-[62px] filter drop-shadow-[0_4px_12px_rgba(255,26,43,0.7)]">
                   <svg
                     viewBox="0 0 48 84"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-full h-full"
+                    className="w-full h-full relative z-10"
                   >
                     {/* Rear Quad Exhaust & Diffuser */}
                     <rect x="14" y="80" width="4" height="3" rx="1" fill="#71717a" />
